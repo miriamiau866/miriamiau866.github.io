@@ -1,0 +1,445 @@
+<html>
+<head>
+    <title>Centro Gerontológico</title>
+    <link rel="shortcut icon" href="img/remio.jpeg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="" rel="stylesheet"/>
+
+</head>
+<style>
+    .custom-header {
+             background-color: #007bff;
+             color: white;
+             text-align: center;
+             padding: 0.5rem;
+         }
+         .top-bar {
+             background-color: #28a745;
+             padding: 0.5rem;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+         }
+         .top-bar img {
+             height: 50px;
+         }
+         .top-bar .contact-info {
+             background-color: #218838;
+             color: white;
+             padding: 0.5rem 1rem;
+             border-radius: 0.25rem;
+         }
+         .top-bar .header-button {
+             background-color: #fd7e14;
+             color: white;
+             padding: 0.5rem 1rem;
+             margin-left: 0.5rem;
+             border-radius: 0.25rem;
+         }
+         .nav-bar {
+             background-color: white;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         }
+         .nav-bar ul {
+             display: flex;
+             justify-content: center;
+             padding: 0.5rem 0;
+             list-style: none;
+         }
+         .nav-bar ul li {
+             margin: 0 1rem;
+         }
+         .nav-bar ul li a {
+             color: black;
+             text-decoration: none;
+             font-weight: bold;
+         }
+         .nav-bar ul li a:hover {
+             color: #007bff;
+         }
+         .main-content {
+             position: relative;
+         }
+         .main-content img {
+             width: 100%;
+             height: auto;
+         }
+         .main-content .overlay {
+             position: absolute;
+             top: 25%;
+             left: 25%;
+             background-color: rgba(255, 255, 255, 0.75);
+             padding: 1.5rem;
+             border-radius: 0.25rem;
+         }
+         .main-content .overlay h2 {
+             color: #007bff;
+             font-size: 2rem;
+             font-weight: bold;
+         }
+         .main-content .overlay p {
+             color: #6c757d;
+             margin-top: 0.5rem;
+             font-size: 1.125rem;
+         }
+         .main-content .overlay button {
+             margin-top: 1rem;
+             background-color: #007bff;
+             color: white;
+             padding: 0.5rem 1rem;
+             border-radius: 0.25rem;
+             border: none;
+             cursor: pointer;
+         }
+         .main-content {
+        
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: relative;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    .container {
+        padding: 5px 0;
+        width: 100%;
+        max-width: 4000px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card {
+        position: relative;
+        width: 800px;
+        height: 600px;
+        margin: 5px;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .card button {
+        position: absolute;
+        bottom: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .card1 {
+        background-image: url(img/ab.jpg);
+        overflow: hidden;
+    }
+    .card1 button {
+        background-color: #104885;
+        
+    }
+    .card2 {
+        background-image: url(img/imagess.jpg);
+        overflow: hidden;
+    }
+    .card2 button {
+        background-color: #28a745;
+       
+    }
+    .card3 {
+        background-image: url(img/images.jpg);
+        overflow: hidden;
+    }
+
+    .card3 button {
+        background-color: #007bff;
+    }
+
+    footer{
+        background: #007bff;
+        padding: 60px 0 30 0;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    footer .Titulo-final{
+        color: #fff;
+        text-align: center;
+        margin: 20px 0 0 0;
+        font-size: 20px;
+    }
+
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgb(8, 8, 8);
+    }
+    .content-foo{
+        text-align: center;
+    }
+
+    .content-foo h4{
+        color: #fff;
+        border-bottom: 3px solid #f8f8f8;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    .content-foo p{
+        color: #ccc;  
+    }
+    .servicios{
+        display: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 4000px;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   </style>
+<body class="font-roboto">
+    
+    <!-- Header -->
+    <header class="bg-blue-500 text-white text-center py-2">
+        ¡Amor por los Abuelos!
+    </header>
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center bg-green-500 p-2">
+        <div class="flex items-center">
+            <img src="img/Imagen1.png" alt="Centro Gerontológico Logo" class="h-12"/>
+            <div class="ml-2">
+                <h1 class="text-xl font-bold">Cuidado Dorado</h1>
+                <p class="text-sm">Desconecta de la ansiedad, conecta con la tranquilidad y vive tus años dorados en paz</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <div class="bg-green-700 text-white px-4 py-2 rounded-md">
+                <i class="fas fa-phone-alt"></i> 318 888 6484
+            </div>
+            <div class="bg-orange-500 text-white px-4 py-2 ml-2 rounded-md" href="wa.link/vuewo6">
+                
+                <a href="https://wa.link/vuewo6" class=":">Llamanos</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <ul class="flex justify-center space-x-4 py-2">
+            <li><a href="#inicio" class=":">INICIO</a></li>
+            <li><a href="#servicios" class="">SERVICIOS</a></li>
+            <li><a href="#kits" class="">KITS</a></li>
+            <li><a href="#noticias" class="">NOTICIAS</a></li>
+            <li><a href="#contacto" class="">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative">
+        <img src="img/facefooder1.jpg" alt="Elderly woman smiling in a garden" class="w-full h-auto"/>
+        <div class="container">
+                <h2 class="text-3xl font-bold text-blue-700">Cuidado Dorado</h2>
+                <p class="text-lg text-gray-700 mt-2">Vivimos plenamente cada etapa de tu vida. ¡Ven y conócenos!</p>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md"><a href="#contacto" class="">Contactenos</a></button>
+        </div>
+        <div class="container">
+            <div class="card card1">
+                <img src="" alt="">
+                <div>Conoce nuestra razón social</div>
+                    <button class="d"><a href="Razon.html">¡Más info!</a></button>
+            </div>
+            <div class="card card2">
+                <img src="" alt="">
+                <div>Conoce nuestros productos</div>
+                <button><a href="Productos.html">!Conocelos!</a></button>
+            </div>
+            <div class="card card3">
+                <img src="" alt="">
+                <div>Comienza a armar tu kit</div>
+                <button>¡Ven y crealo!</button>
+            </div>
+        </div>
+<!-- Sección de Servicios -->
+<section id="servicios" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-700 mb-8">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <i class="fas fa-heart text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Cuidado Personalizado</h3>
+                <p class="text-gray-600">Ofrecemos atención adaptada a las necesidades de cada persona, brindando comodidad y calidad de vida.</p>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <i class="fas fa-utensils text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Nutrición y Alimentación</h3>
+                <p class="text-gray-600">Plan de alimentación equilibrado y supervisado, adaptado a las necesidades nutricionales de nuestros residentes.</p>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <i class="fas fa-dumbbell text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Actividades Recreativas</h3>
+                <p class="text-gray-600">Organizamos actividades para estimular la mente y el cuerpo, promoviendo la salud y el bienestar.</p>
+            </div>
+            <!-- Servicio 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <i class="fas fa-user-md text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Atención Médica</h3>
+                <p class="text-gray-600">Contamos con profesionales de la salud que supervisan el estado físico y mental de cada residente.</p>
+            </div>
+            <!-- Servicio 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <i class="fas fa-music text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Terapias de Entretenimiento</h3>
+                <p class="text-gray-600">Implementamos terapias a través de la música, el arte y otros medios, promoviendo el bienestar emocional.</p>
+            </div>
+            <!-- Servicio 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <i class="fas fa-concierge-bell text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Asistencia 24/7</h3>
+                <p class="text-gray-600">Ofrecemos asistencia y atención constante para garantizar la seguridad y confort de nuestros residentes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Kits -->
+<section id="kits" class="bg-white py-10">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-green-600 mb-8">Nuestros Kits</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Kit 1 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Kit Básico</h3>
+                <p class="text-gray-600">Incluye los elementos esenciales para el cuidado diario y la comodidad del usuario.</p>
+            </div>
+            <!-- Kit 2 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Kit Avanzado</h3>
+                <p class="text-gray-600">Con una selección de productos premium para un cuidado integral y mayor confort.</p>
+            </div>
+            <!-- Kit 3 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Kit Especializado</h3>
+                <p class="text-gray-600">Diseñado para usuarios con necesidades específicas, con productos especializados.</p>
+            </div>
+            <!-- Kit 4 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Kit de Bienestar</h3>
+                <p class="text-gray-600">Promueve la salud y el bienestar con productos para el cuidado personal y la relajación.</p>
+            </div>
+            <!-- Kit 5 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Kit Premium</h3>
+                <p class="text-gray-600">Incluye una gama de productos de alta calidad para una experiencia completa de cuidado.</p>
+            </div>
+            <!-- Kit 6 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Kit Familiar</h3>
+                <p class="text-gray-600">Pensado para el uso compartido, ideal para familias con productos variados y útiles.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Noticias: Cuidado del Adulto Mayor -->
+ <section id="noticias">
+    <div class="container">
+        <div class="card card1">
+            <img src="cuidado_medico.jpg" alt="Cuidados Médicos">
+            <div>Avances en Cuidados Médicos para el Adulto Mayor</div>
+            <p>Conoce las últimas técnicas y tratamientos diseñados para mejorar la calidad de vida de nuestros adultos mayores y mantener su bienestar.</p>
+        </div>
+        
+        <div class="card card2">
+            <img src="apoyo_emocional.jpg" alt="Apoyo Emocional">
+            <div>Importancia del Apoyo Emocional</div>
+            <p>Descubre cómo el apoyo emocional y el acompañamiento pueden impactar positivamente la salud mental de los adultos mayores.</p>
+        </div>
+        
+        <div class="card card3">
+            <img src="nutricion.jpg" alt="Nutrición y Bienestar">
+            <div>Nutrición para una Vida Saludable</div>
+            <p>Explora consejos y dietas especializadas que contribuyen a una vida plena y saludable en la tercera edad.</p>
+        </div>
+    </div>
+</section>
+<!-- Sección de Contacto -->
+<!-- Sección de Contacto -->
+<section id="contacto" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6">Contáctanos</h2>
+        <p class="text-gray-700 mb-8">Para más información sobre nuestros servicios o para cualquier consulta, ¡no dudes en ponerte en contacto con nosotros!</p>
+    </div>
+    <div class="flex justify-center items-start gap-8">
+        <!-- Información de Contacto -->
+        <div class=" bg-white p-6 rounded-lg shadow-md text-left">
+            <h3 class="text-xl font-semibold text-blue-700 mb-4">Información de Contacto</h3>
+            <p><i class="fas fa-phone-alt text-blue-700"></i> Teléfono: 318 888 6484</p>
+            <p class="mt-2"><i class="fas fa-envelope text-blue-700"></i> Correo: info@cuidado-dorado.com</p>
+            <p class="mt-2"><i class="fas fa-map-marker-alt text-blue-700"></i> Dirección: Calle Ejemplo #123, Ciudad</p>
+            <p class="mt-4">Horarios de atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+        </div>
+        
+        <!-- Formulario de Contacto -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-blue-700 mb-4">Envíanos un Mensaje</h3>
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="nombre" class="block text-gray-700">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full p-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-md" required>
+                </div>
+                <div>
+                    <label for="mensaje" class="block text-gray-700">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="w-full p-2 border border-gray-300 rounded-md" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Teléfono</h4>
+        <p>318 888 6484</p>
+        </div>
+        <div class="content-foo">
+            <h4>Email</h4>
+        <p>CuidadoDorado@contactanos.com</p>
+        </div>
+        <div class="content-foo">
+        
+            <h4><a href="https://maps.app.goo.gl/4Enw5cHpGon2uAAeA" class=":">Ubicación</a></h4>
+        <p>Medellin, Antioquia</p>
+        </div>
+        
+    </div>
+    <h2 class="Titulo-final">&copy; Cuidado Dorado</h2>
+</footer>
+</html>
+
